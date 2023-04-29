@@ -9,3 +9,11 @@
     margin-top: 4px;
     margin-right: 6px;
 }
+.no-style-link{
+    text-decoration: none;
+    color: inherit;
+}
+.no-style-link:hover{
+    text-decoration: none;
+    color: inherit;
+}

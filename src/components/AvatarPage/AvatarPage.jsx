@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header";
-import ava from "../../assets/images/A.png";
 import { useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import jsonData from "./../../assets/data.json";
@@ -14,6 +13,8 @@ const AvatarPage = () => {
     console.log(newRating);
   };
 
+  const img= "/src/assets/images/" + avatar.image;
+
   return (
     <>
       <Header />
@@ -21,7 +22,7 @@ const AvatarPage = () => {
         <div className="row">
           <div className="col-md-4">
             <img
-              src={ava}
+              src={img}
               alt="Avatar Image"
               className="img-fluid rounded-circle"
             />
