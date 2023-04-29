@@ -1,19 +1,15 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
-import MainContainer from './components/MainContainer/MainContainer';
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home';
+import AvatarPage from './components/AvatarPage/AvatarPage';
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <div className="container-fluid">
-      <div className="row">
-        <Sidebar/>
-        <MainContainer/>
-      </div>
-    </div>
-    </div>
+    <Routes>
+      <Route path="/" element={ <Home/> } />
+      <Route path="/:avatarName" element={ <AvatarPage/> } />
+    </Routes>
+   
   );
 };
 
