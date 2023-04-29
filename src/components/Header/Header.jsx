@@ -3,13 +3,14 @@ import logoWhite from './../../assets/Logo/logo_white.png';
 import userIcon from '../../assets/batman.png'
 import { FaSearch, FaBell, FaShoppingCart } from "react-icons/fa";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="navbar navbar-expand-lg navbar-light bg-alpha px-3">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         <img src={logoWhite} alt="Logo" height="40" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler "
         type="button"

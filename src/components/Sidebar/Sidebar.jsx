@@ -6,11 +6,11 @@ import PolygonAmount from './PolygonAmount';
 import AutoUpload from './AutoUpload';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({genderFilter, setGenderFilter}) => {
     return (
         <nav className="col-md-2 d-none d-md-block sidebar">
           <div className="sidebar-sticky text-small">
-            <Category/>
+            <Category genderFilter={genderFilter} setGenderFilter={setGenderFilter}/>
             <Content/>
             <Price/>
             <PolygonAmount/>
