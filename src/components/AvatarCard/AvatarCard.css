@@ -1,0 +1,11 @@
+.ava-creator{
+    height: 24px;
+}
+.content-indicator{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #97b3dc;
+    margin-top: 4px;
+    margin-right: 6px;
+}

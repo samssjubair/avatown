@@ -1,0 +1,271 @@
+{
+    "avatars": [
+      {
+        "name": "Alex",
+        "image": "A.png",
+        "gender": "female",
+        "price": 35,
+        "rating": 4.5,
+        "likes": 238,
+        "description": "A tech enthusiast with a love for coffee and coding.",
+        "polygonAmount": 80000,
+        "autoUploadSupport": true
+      },
+      {
+        "name": "Bella",
+        "image": "B.png",
+        "gender": "female",
+        "price": 55,
+        "rating": 4.2,
+        "likes": 182,
+        "description": "A fashionista with a passion for makeup and selfies.",
+        "polygonAmount": 60000,
+        "autoUploadSupport": false
+      },
+      {
+        "name": "Charlie",
+        "image": "C.png",
+        "gender": "male",
+        "price": 25,
+        "rating": 3.8,
+        "likes": 90,
+        "description": "A fitness enthusiast with a love for hiking and outdoor adventures.",
+        "polygonAmount": 70000,
+        "autoUploadSupport": true
+      },
+      {
+        "name": "Daisy",
+        "image": "D.png",
+        "gender": "female",
+        "price": 45,
+        "rating": 4.6,
+        "likes": 320,
+        "description": "A foodie with a passion for cooking and trying new recipes.",
+        "polygonAmount": 5000,
+        "autoUploadSupport": false
+      },
+      {
+        "name": "Ethan",
+        "image": "E.png",
+        "gender": "male",
+        "price": 30,
+        "rating": 4.1,
+        "likes": 125,
+        "description": "A musician with a love for playing the guitar and writing songs.",
+        "polygonAmount": 90000,
+        "autoUploadSupport": true
+      },
+      {
+        "name": "Fiona",
+        "image": "F.png",
+        "gender": "female",
+        "price": 40,
+        "rating": 4.3,
+        "likes": 205,
+        "description": "A traveler with a love for exploring new places and cultures.",
+        "polygonAmount": 75000,
+        "autoUploadSupport": false
+      },
+      {
+        "name": "Gabe",
+        "image": "G.png",
+        "gender": "male",
+        "price": 20,
+        "rating": 3.5,
+        "likes": 50,
+        "description": "A gamer with a passion for strategy games and puzzles.",
+        "polygonAmount": 60000,
+        "autoUploadSupport": true
+      },
+      {
+        "name": "Hannah",
+        "image": "H.png",
+        "gender": "female",
+        "price": 50,
+        "rating": 4.4,
+        "likes": 275,
+        "description": "A writer with a love for poetry and storytelling.",
+        "polygonAmount": 85000,
+        "autoUploadSupport": false
+      },
+      {
+        "name": "Ian",
+        "image": "I.png",
+        "gender": "female",
+        "price": 40,
+        "rating": 4.2,
+        "likes": 170,
+        "description": "A photographer with a love for capturing moments and memories.",
+        "polygonAmount": 65000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Jasmine",
+        "image": "J.png",
+        "gender": "male",
+        "price": 60,
+        "rating": 4.5,
+        "likes": 350,
+        "description": "A dancer with a passion for hip-hop and contemporary styles.",
+        "polygonAmount": 70000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Kevin",
+        "image": "K.png",
+        "gender": "male",
+        "price": 30,
+        "rating": 4.0,
+        "likes": 110,
+        "description": "A fitness coach with a love for weight training and nutrition.",
+        "polygonAmount": 80000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Lila",
+        "image": "L.png",
+        "gender": "female",
+        "price": 45,
+        "rating": 4.3,
+        "likes": 240,
+        "description": "An artist with a passion for painting and drawing.",
+        "polygonAmount": 55000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Mark",
+        "image": "M.png",
+        "gender": "female",
+        "price": 25,
+        "rating": 3.9,
+        "likes": 75,
+        "description": "A writer with a love for science fiction and fantasy.",
+        "polygonAmount": 90000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Natalie",
+        "image": "N.png",
+        "gender": "female",
+        "price": 55,
+        "rating": 4.6,
+        "likes": 300,
+        "description": "A traveler with a love for photography and adventure.",
+        "polygonAmount": 75000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Oscar",
+        "image": "O.png",
+        "gender": "female",
+        "price": 35,
+        "rating": 4.2,
+        "likes": 185,
+        "description": "A food lover with a passion for cooking and trying new cuisines.",
+        "polygonAmount": 65000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Penelope",
+        "image": "P.png",
+        "gender": "female",
+        "price": 50,
+        "rating": 4.4,
+        "likes": 270,
+        "description": "A fashion enthusiast with a love for vintage and retro styles.",
+        "polygonAmount": 70000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Quinn",
+        "image": "Q.png",
+        "gender": "male",
+        "price": 20,
+        "rating": 3.6,
+        "likes": 60,
+        "description": "A musician with a passion for rock and roll and blues.",
+        "polygonAmount": 60000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Rachel",
+        "image": "R.png",
+        "gender": "female",
+        "price": 65,
+        "rating": 4.7,
+        "likes": 380,
+        "description": "A makeup artist with a talent for creating bold and dramatic looks.",
+        "polygonAmount": 85000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Sam",
+        "image": "S.png",
+        "gender": "female",
+        "price": 40,
+        "rating": 4.1,
+        "likes": 150,
+        "description": "A graphic designer with a love for minimalist and modern styles.",
+        "polygonAmount": 75000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Tanya",
+        "image": "T.png",
+        "gender": "female",
+        "price": 55,
+        "rating": 4.5,
+        "likes": 290,
+        "description": "A yoga instructor with a passion for mindfulness and meditation.",
+        "polygonAmount": 65000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Ulysses",
+        "image": "U.png",
+        "gender": "female",
+        "price": 30,
+        "rating": 4.0,
+        "likes": 100,
+        "description": "A dog trainer with a love for all kinds of furry friends.",
+        "polygonAmount": 80000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Victoria",
+        "image": "V.png",
+        "gender": "female",
+        "price": 60,
+        "rating": 4.6,
+        "likes": 330,
+        "description": "A photographer with a talent for capturing weddings and events.",
+        "polygonAmount": 70000,
+        "autoUploadSupport": false
+        },
+        {
+        "name": "Wes",
+        "image": "W.png",
+        "gender": "female",
+        "price": 25,
+        "rating": 4.2,
+        "likes": 170,
+        "description": "A video editor with a love for creating cinematic experiences.",
+        "polygonAmount": 60000,
+        "autoUploadSupport": true
+        },
+        {
+        "name": "Xiona",
+        "image": "X.png",
+        "gender": "female",
+        "price": 25,
+        "rating": 4.2,
+        "likes": 170,
+        "description": "A video editor with a love for creating cinematic experiences.",
+        "polygonAmount": 60000,
+        "autoUploadSupport": true
+        }
+
+    ]
+}
+    
+  

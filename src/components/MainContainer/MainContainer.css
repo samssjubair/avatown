@@ -1,0 +1,7 @@
+.card-page {
+    display: none;
+  }
+  
+  .card-page.active {
+    display: block;
+  }
