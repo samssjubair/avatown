@@ -26,3 +26,11 @@ used boilerplate from their websites
 ## json
 - using help of chatgpt
 
+## screenshots
+
+### Home page
+![Screenshot 1](ss1.jpg)
+
+### Avatar details page
+![Screenshot 2](ss2.jpg)
+
