@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Price = () => {
     const [priceRange, setPriceRange] = useState('');
-    console.log(priceRange)
+    // console.log(priceRange)
     return (
         <>
             <h4>Price</h4>

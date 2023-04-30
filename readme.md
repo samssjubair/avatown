@@ -1,6 +1,7 @@
 # Avatown Dolami, Inc Frontend-Engineer Coding Test( React.js )
 #### Samss Jubair, Software Developer, Dhaka Bangladesh
 
+## live url https://644e54cf62fef5453dba34e3--avatown-sj.netlify.app
 
 ## How to run the project locally
 
