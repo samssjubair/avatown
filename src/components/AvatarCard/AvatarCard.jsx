@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ava from "../../assets/images/A.png";
-import { AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineArrowUpOnSquare } from "react-icons/hi2";
 import { AiOutlinePaperClip } from "react-icons/ai";
 import { BsCartPlus } from "react-icons/bs";
@@ -18,7 +17,8 @@ const AvatarCard = ({ data, cartCount, setCartCount }) => {
   
 
   const handlePopupClick = () => {
-    navigator.clipboard.writeText('http://localhost:5173/' + data.name);
+    // console.log(window.location.href)
+    navigator.clipboard.writeText(window.location.href + data.name);
     setIsPopupOpen(false);
   };
     
@@ -27,10 +27,14 @@ const AvatarCard = ({ data, cartCount, setCartCount }) => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
+  const handleLinkClick = () => {
+    // handle link click event
+    console.log("link clicked")
+  };
 
   return (
     <div className="col-lg-3 col-md-6 col-sm-12 p-1">
-      {/* <Link to={`/${data.name}`} className="no-style-link"> */}
+      {/* <Link  onClick={handleLinkClick} className="no-style-link"> */}
         <div className="card border-0">
           <img src={imagePath} className="card-img-top rounded" alt="avatar" />
           <button
@@ -41,7 +45,9 @@ const AvatarCard = ({ data, cartCount, setCartCount }) => {
             <BsCartPlus /> Add
           </button>
           <div className="card-body">
-            <h5 className="card-title">{data.name}</h5>
+            <Link to={`/${data.name}`} onClick={handleLinkClick} className="no-style-link">
+                <h5 className="card-title">{data.name}</h5>
+            </Link>
             <div className="row">
               <div className="col-10 d-flex">
                 <ReactStars
@@ -79,7 +85,10 @@ const AvatarCard = ({ data, cartCount, setCartCount }) => {
               <p>PC Only</p>
             </div>
             <div className="d-flex">
-              <p className="card-text">{data.description}</p>
+            <Link to={`/${data.name}`} onClick={handleLinkClick} className="no-style-link">
+                <p className="card-text">{data.description}</p>
+            </Link>
+              
               <button className="btn btn-sm pe-0 float-end">
                 <div>
                 {isPopupOpen && (
