@@ -17,3 +17,12 @@
     text-decoration: none;
     color: inherit;
 }
+.popup{
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #9ca9aa;
+    padding: 3px 5px;
+    border-radius: 5px;
+}

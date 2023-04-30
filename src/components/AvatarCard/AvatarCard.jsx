@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import ava from "../../assets/images/A.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineArrowUpOnSquare } from "react-icons/hi2";
+import { AiOutlinePaperClip } from "react-icons/ai";
 import { BsCartPlus } from "react-icons/bs";
 import "./AvatarCard.css";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
+import Heart from "react-heart"
 
-const AvatarCard = ({ data }) => {
+
+
+const AvatarCard = ({ data, cartCount, setCartCount }) => {
+    const [isClick, setClick] = useState(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  
+
+  const handlePopupClick = () => {
+    navigator.clipboard.writeText('http://localhost:5173/' + data.name);
+    setIsPopupOpen(false);
+  };
+    
   const imagePath = "/src/assets/images/" + data.image;
 
   const ratingChanged = (newRating) => {
@@ -16,10 +30,11 @@ const AvatarCard = ({ data }) => {
 
   return (
     <div className="col-lg-3 col-md-6 col-sm-12 p-1">
-      <Link to={`/${data.name}`} className="no-style-link">
+      {/* <Link to={`/${data.name}`} className="no-style-link"> */}
         <div className="card border-0">
           <img src={imagePath} className="card-img-top rounded" alt="avatar" />
           <button
+            onClick={() => setCartCount(cartCount + 1)}
             className="btn btn-sm btn-primary"
             style={{ position: "absolute", top: 5, right: 5 }}
           >
@@ -43,9 +58,7 @@ const AvatarCard = ({ data }) => {
                 </p>
               </div>
               <div className="col-2">
-                <button className="btn btn-sm heart-btn pt-0">
-                  <AiOutlineHeart style={{ fontSize: "1.5rem" }} />
-                </button>
+                <Heart isActive={isClick} onClick={()=>setClick(!isClick)} animationTrigger='hover'/>
               </div>
             </div>
             <div>
@@ -68,12 +81,21 @@ const AvatarCard = ({ data }) => {
             <div className="d-flex">
               <p className="card-text">{data.description}</p>
               <button className="btn btn-sm pe-0 float-end">
-                <HiOutlineArrowUpOnSquare style={{ fontSize: "2rem" }} />
+                <div>
+                {isPopupOpen && (
+                    <div className="popup" onClick={handlePopupClick}>
+                    <AiOutlinePaperClip/>
+                    Copy link
+                    </div>
+                )}
+                </div>
+                <HiOutlineArrowUpOnSquare onClick={()=>setIsPopupOpen(!isPopupOpen)} style={{ fontSize: "2rem" }} />
+                
               </button>
             </div>
           </div>
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 };

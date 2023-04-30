@@ -4,7 +4,8 @@ import Pagination from "react-bootstrap/Pagination";
 import jsonData from "./../../assets/data.json";
 import "./MainContainer.css";
 
-const MainContainer = ({ genderFilter, setGenderFilter }) => {
+const MainContainer = ({ genderFilter, setGenderFilter, cartCount, setCartCount }) => {
+  
   const [filter, setFilter] = useState("");
   let allAvatars = jsonData.avatars;
   if (genderFilter) {
@@ -44,7 +45,7 @@ const MainContainer = ({ genderFilter, setGenderFilter }) => {
     const avatarCards = [];
     for (let i = cardIndexStart; i < cardIndexEnd; i++) {
       const data = allAvatars[i];
-      avatarCards.push(<AvatarCard key={i} data={data} />);
+      avatarCards.push(<AvatarCard key={i} data={data} cartCount={cartCount} setCartCount={setCartCount} />);
     }
     return avatarCards;
   };
@@ -91,7 +92,6 @@ const MainContainer = ({ genderFilter, setGenderFilter }) => {
       <div className="d-flex justify-content-between">
         <h3>Full avatar</h3>
         <div className="mt-2">
-          {/* <label htmlFor="sort-by"></label> */}
           <select onChange={handleFilterSelect}>
             <option value="">Sort By Featured</option>
             <option value="priceAsc">Price: Low to High</option>

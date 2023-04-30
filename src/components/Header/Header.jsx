@@ -5,7 +5,7 @@ import { FaSearch, FaBell, FaShoppingCart } from "react-icons/fa";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({cartCount}) {
   return (
     <header className="navbar navbar-expand-lg navbar-light bg-alpha px-3">
       <Link to="/" className="navbar-brand">
@@ -53,7 +53,7 @@ function Header() {
           <li className="nav-item px-2">
             <a className="nav-link text-white bg-beta px-2 rounded icon-width" href="#">
               <FaShoppingCart />
-              <span className="badge badge-pill  notification-count">2</span>
+              <span className="badge badge-pill  notification-count">{cartCount}</span>
             </a>
           </li>
           <li className="nav-item dropdown px-2">
